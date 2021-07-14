@@ -12,6 +12,7 @@ main {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  max-width: 1140px;
 
  }
 
@@ -27,15 +28,26 @@ main > div {
   padding: 4px 12px;
   border-radius: 0.5em;
   background-color: blue;
-  color: white;
+
+  /*color: white; */
 
 }
 
+.box:nth-of-type(1) { background-color: pink; }
+.box:nth-of-type(2)  { background-color: red; }
 .box:nth-of-type(3) > span, .box:nth-of-type(4) > span { display: none; }
-/*. box:nth-of-type(4) > span { display: none;} */
 
 @media screen and ( min-width: 641px) {
 main { flex-direction: row;
 /* turn the hidden items back on, change colors accordingly */
+
 }
+.box:nth-of-type(1)  { background-color: blue; }
+.box:nth-of-type(2)  { background-color: purple; }
+.box:nth-of-type(3)  { background-color: grey; }
+.box:nth-of-type(4)  { background-color: brown; }
+
+.box:nth-of-type(3) > span { display: inline-block; }
+.box:nth-of-type(4) > span { display: inline-block; }
+
 }
