@@ -29,9 +29,13 @@ main > div {
   padding: 4px 12px;
   border-radius: 0.5em;
   background-color: blue;
+<<<<<<< HEAD
+  color: white; 
+=======
 
 
   /*color: white; */
+>>>>>>> d98a485ef989e3e3dc6876e5cd8d5a223d552ea6
 
 }
 
